@@ -28,6 +28,8 @@ export default function RootLayout({
           <Box
             component="main"
             width="100%"
+            sx={{ backgroundColor: 'white' }} // Add this line to set the background color to white
+
           >
             {children}
           </Box>

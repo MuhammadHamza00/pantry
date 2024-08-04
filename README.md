@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pantry
 
-## Getting Started
+Pantry is a Next.js application designed to help users manage their pantry items. The app includes features such as item tracking, category management, and image recognition for classifying items.
 
-First, run the development server:
+## Project Setup
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (version 14 or later)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/MuhammadHamza00/pantry.git
+   cd pantry
+   ```
+
+2. **Install dependencies:**
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Using yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Install Additional Packages:**
+
+   The project requires several additional packages:
+
+   - **Firebase**: For backend services like authentication and Firestore.
+   - **Material-UI (MUI)**: For UI components.
+   - **MUI Icons**: For Material Design icons.
+   - **React Webcam**: For capturing images from the user's webcam.
+   - **Next PWA**: For Progressive Web App support.
+   - **Clarifai SDK**: For image recognition and classification.
+
+   You can install these packages using the following commands:
+
+   ```bash
+   npm install @mui/material @emotion/react @emotion/styled
+   npm install @mui/icons-material
+   npm install firebase
+   npm install react-webcam
+   npm install next-pwa
+   npm install clarifai
+   ```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory and add the following variables:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+NEXT_PUBLIC_CLARIFAI_API_KEY=your_clarifai_api_key
+```
+
+Replace the placeholders with your actual Firebase and Clarifai credentials.
+
+## Running the Application
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This command will start the application at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The application can be easily deployed to Vercel. Make sure to set the environment variables in the Vercel dashboard.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app`: Contains the main app pages and components.
+- `src/components`: Reusable components like `Sidebar`, `PantryTable`, etc.
+- `firebase`: Configuration and setup for Firebase services.
+- `public`: Public assets like images and icons.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Authentication**: Users can sign up and log in using Firebase Authentication.
+- **Pantry Management**: Users can add, edit, and delete pantry items.
+- **Category Management**: Users can manage categories for organizing pantry items.
+- **Image Recognition**: Uses Clarifai for classifying images captured via webcam.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
