@@ -22,7 +22,7 @@ const Home = () => {
       <Sidebar />
       <Box
         component="main"
-        sx={{ flexGrow: 1, minHeight: '100vh' }}
+        sx={{ flexGrow: 1, minHeight: '100vh', backgroundColor: 'white' }}
       >
         {/* Cover Section */}
         <Box
