@@ -5,7 +5,7 @@ import Sidebar from '../components/sidebar';
 import Link from 'next/link';
 import { Inventory, AddShoppingCart, Assessment, People } from '@mui/icons-material';
 import Googlesingin from '../components/Googlesign';
-import bg from '../../public/bgg.jpg'
+import bg from '../public/bgg.jpg'
 import Image from 'next/image';
 
 const Home = () => {
