@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Button, CircularProgress, Snackbar, Alert } from '@mui/material';
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from '../../firebase'; // Adjust the import path as necessary
+import { auth, provider } from '../firebase'; // Adjust the import path as necessary
 
 const GoogleSignIn = () => {
   const [loading, setLoading] = useState(false);
