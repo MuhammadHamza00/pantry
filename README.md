@@ -1,14 +1,14 @@
-Pantry
+###Pantry
 Pantry is a Next.js application designed to help users manage their pantry items. The app includes features such as item tracking, category management, and image recognition for classifying items.
 
-Project Setup
-Prerequisites
+###Project Setup
+##Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 Node.js (version 14 or later)
 npm or yarn
 
-Installation
+###Installation
 Clone the repository:
 
 bash
@@ -29,7 +29,7 @@ Copy code
 yarn install
 Install Additional Packages:
 
-The project requires several additional packages:
+###The project requires several additional packages:
 
 Firebase: For backend services like authentication and Firestore.
 Material-UI (MUI): For UI components.
@@ -49,7 +49,7 @@ npm install next-pwa
 npm install clarifai
 Environment Variables:
 
-Create a .env.local file in the root directory and add the following variables:
+###Create a .env.local file in the root directory and add the following variables:
 
 env
 Copy code
@@ -62,7 +62,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 NEXT_PUBLIC_CLARIFAI_API_KEY=your_clarifai_api_key
 Replace the placeholders with your actual Firebase and Clarifai credentials.
 
-Running the Application
+###Running the Application
 To start the development server, run:
 
 bash
@@ -70,16 +70,16 @@ Copy code
 npm run dev
 This command will start the application at http://localhost:3000.
 
-Deployment
+###Deployment
 The application can be easily deployed to Vercel. Make sure to set the environment variables in the Vercel dashboard.
 
-Project Structure
+###Project Structure
 src/app: Contains the main app pages and components.
 src/components: Reusable components like Sidebar, PantryTable, etc.
 firebase: Configuration and setup for Firebase services.
 public: Public assets like images and icons.
 
-Features
+###Features
 Authentication: Users can sign up and log in using Firebase Authentication.
 Pantry Management: Users can add, edit, and delete pantry items.
 Category Management: Users can manage categories for organizing pantry items.
