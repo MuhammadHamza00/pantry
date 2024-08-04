@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
-import { firestore } from '../../firebase'; // Adjust the import according to your file structure
+import { firestore } from '../firebase'; // Adjust the import according to your file structure
 
 // Define a TypeScript interface for the category data structure
 interface Category {

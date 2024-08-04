@@ -1,7 +1,7 @@
 "use client";
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { Edit, Delete, Save, Cancel } from '@mui/icons-material';
-import { firestore } from '../../firebase';
+import { firestore } from '../firebase';
 import { useEffect, useState } from 'react';
 import { Firestore, getDocs, collection, query, deleteDoc, doc, updateDoc } from 'firebase/firestore';
 import React from 'react';

@@ -22,7 +22,7 @@ import GoogleSignIn from './Googlesign';
 import { Google } from '@mui/icons-material';
 import FlareIcon from '@mui/icons-material/Flare';
 import DeviceHubIcon from '@mui/icons-material/DeviceHub';
-import Logo from '../../public/logo.png';
+import Logo from '../public/logo.png';
 import Image from 'next/image';
 
 interface Props {
