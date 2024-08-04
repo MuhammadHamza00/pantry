@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from '../components/sidebar';
 import { CssBaseline } from '@mui/material';
 import Box from '@mui/material/Box';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
