@@ -50,7 +50,6 @@ const GoogleSignIn = () => {
       >
         <Alert
           onClose={() => setSnackbarOpen(false)}
-          severity={alertSeverity}
           sx={{ width: '100%' }}
         >
           {alertMessage}
